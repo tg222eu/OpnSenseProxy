@@ -14,4 +14,10 @@ Download the newly created certificate by pressing "Export CA cert" button" and 
 Head to Services -> Web Proxy -> Administration
 Select Enable proxy
 
+On the same page, head over toi the Forward Proxy tab
+Select the "i" icon to bring up the description for "Enable Transparent HTTP Proxy". There will be a warning description that explains you need to configure a firewall rule. Click on the "Add new firewall rule", once clicked a populated firewall rule will appear and the only thing you have here is to click save, Then apply changes.
+
+Head back to Forward Proxy Tab. Select "Enable Transparent HTTP Proxy" and "Enable SSL Inspection", fill in your newly created certificate authority in "CA to use". Hit apply, this will take up to 30 sec to apply.
+
+
 Configuration
