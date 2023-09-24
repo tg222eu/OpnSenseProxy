@@ -15,11 +15,13 @@ Head to Services -> Web Proxy -> Administration
 Select Enable proxy
 
 On the same page, head over toi the Forward Proxy tab
-Select the "i" icon to bring up the description for "Enable Transparent HTTP Proxy". There will be a warning description that explains you need to configure a firewall rule. Click on the "Add new firewall rule", once clicked a populated firewall rule will appear and the only thing you have here is to click save, Then apply changes.
+Select the "i" icon to bring up the description for "Enable Transparent HTTP Proxy". There will be a warning description that explains you need to configure a firewall rule. Click on the "Add new firewall rule", once clicked a populated firewall rule will appear and the only thing you have here is to click save, Then apply changes. REPEAT THE STEP FOR "ENABLE SSL INSPECTION"
+
+Make a firewall rule that block ports 443, 80 from LAN source to any destination. This will prevent any bypass of the proxy filter
 
 Head back to Forward Proxy Tab. Select "Enable Transparent HTTP Proxy" and "Enable SSL Inspection", fill in your newly created certificate authority in "CA to use". Hit apply, this will take up to 30 sec to apply.
 
-Next head over to "Remote Access Control Lists" Tab, hit the "Add" button. Add a filename for storing the configuration and in the URL section fill in ftp://ftp.ut-capitole.fr/pub/reseau/cache/squidguard_contrib/ <br> This link is provided by The Université Toulouse which gives out their blacklist for free and keeps growing. This is also the list OPNsense recommend in their documentation . Hit Save and then download ACLs 
+Next head over to "Remote Access Control Lists" Tab, hit the "Add" button. Add a filename for storing the configuration and in the URL section fill in ftp://ftp.ut-capitole.fr/pub/reseau/cache/squidguard_contrib/blacklists.tar.gz <br> This link is provided by The Université Toulouse which gives out their blacklist for free and keeps growing. This is also the list OPNsense recommend in their documentation . Hit Save and then download ACLs 
 
 
 Configuration
