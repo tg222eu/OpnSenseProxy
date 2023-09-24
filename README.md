@@ -36,3 +36,4 @@ The firewall should now block webpages based on Université Toulouse filter
 
 If blacklisted website dont get the message "Access Denied" but instead "This site can’t be reached" the NAT port forwarding might not be set up correctly.
 
+If you get for example NET::ERR_CERT_AUTHORITY_INVALID certificate error, and DNS error on random non-existing webpages then the proxy might not redirect traffic. Check firewall rules is redirected to correct proxy ports
