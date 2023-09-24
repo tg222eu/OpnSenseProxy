@@ -19,7 +19,7 @@ Select the "i" icon to bring up the description for "Enable Transparent HTTP Pro
 
 Head back to Forward Proxy Tab. Select "Enable Transparent HTTP Proxy" and "Enable SSL Inspection", fill in your newly created certificate authority in "CA to use". Hit apply, this will take up to 30 sec to apply.
 
-Next head over to "Remote Access Control Lists" Tab, hit the "Add" button. Add a filename for storing the configuration and in the URL section fill in ftp://ftp.ut-capitole.fr/pub/reseau/cache/squidGuard/ <br> This link will provided by The Université Toulouse which gives out their blacklist for free and keeps growing. This is also the list OPNsense recommend in their documentation . Hit Save. 
+Next head over to "Remote Access Control Lists" Tab, hit the "Add" button. Add a filename for storing the configuration and in the URL section fill in ftp://ftp.ut-capitole.fr/pub/reseau/cache/squidguard_contrib/ <br> This link is provided by The Université Toulouse which gives out their blacklist for free and keeps growing. This is also the list OPNsense recommend in their documentation . Hit Save and then download ACLs 
 
 
 Configuration
